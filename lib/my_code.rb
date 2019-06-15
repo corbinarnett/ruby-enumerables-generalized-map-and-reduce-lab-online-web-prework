@@ -9,7 +9,7 @@ def map(array)
   new_array
 end
 
-def reduce(s, sp=nil)
+def reduce(source_array, sp=nil)
   if sp
     accum = sp
     i = 0
