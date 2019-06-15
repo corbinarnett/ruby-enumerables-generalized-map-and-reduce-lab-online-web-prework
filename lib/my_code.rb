@@ -9,7 +9,7 @@ def map(array)
   new_array
 end
 
-def reduce(array, starting_point = nil)
+def reduce(array, sp = nil)
   if value
     reduced = value
     i = 0
