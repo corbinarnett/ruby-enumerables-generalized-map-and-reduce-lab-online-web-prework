@@ -5,7 +5,6 @@ def map(array)
   while i < array.length do
     new_array << yield(array[i])
   end
-    
+
   end
 end
-  
