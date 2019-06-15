@@ -9,10 +9,11 @@ def map(array)
   new_array
 end
 
-def reduce(array, starting_point = 0)
+def reduce(array, starting_point = nil)
   if value
     reduced = value
     i = 0
   else
     reduced = array[0]
+    i = 1
 end
