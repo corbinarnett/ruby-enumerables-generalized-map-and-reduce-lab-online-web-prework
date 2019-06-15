@@ -11,7 +11,7 @@ end
 
 def reduce(source_array, starting_point=nil)
   if starting_point
-    accum = sp
+    accum = starting_point
     i = 0
   else
     accum = source_array[0]
