@@ -9,17 +9,17 @@ def map(array)
   new_array
 end
 
-def reduce(array, sp = nil)
-  if value
-    reduced = value
+def reduce(s, sp=nil)
+  if sp
+    accum = sp
     i = 0
   else
-    reduced = array[0]
+    accum = s[0]
     i = 1
   end
-  while i < array.length
-    reduced = yield(reduced, array[i])
+  while i < s.length
+    accum = yield(accum, s[i])
     i += 1
   end
-  reduced
+  accum
 end
